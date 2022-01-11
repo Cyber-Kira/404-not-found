@@ -1,0 +1,100 @@
+:root {
+  --gray: #4f4f4f;
+  --gray-dark: #333333;
+  --gray-light: #bdbdbd;
+  --white: #fff;
+
+  --font-main: "Space Mono", serif;
+  --font-logo: "Inconsolata", serif;
+  --font-footer: "Montserrat", serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  margin-top: 1.25rem;
+  color: var(--gray-dark);
+}
+
+img {
+  max-width: 100%;
+  padding: 0 1.25rem;
+  margin-top: 4rem;
+  margin-bottom: 3.75rem;
+}
+
+h1 {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 71px;
+  letter-spacing: -0.035em;
+  width: calc(100% + 1.5rem);
+  margin-bottom: 1.875rem;
+  color: var(--gray-dark);
+}
+
+p {
+  font-family: var(--font-main);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  color: var(--gray);
+}
+
+button {
+  background-color: var(--gray-dark);
+  border: 0;
+  font-size: 0.875rem;
+  font-family: var(--font-main);
+  color: #fff;
+  width: 13.5rem;
+  text-transform: uppercase;
+  line-height: 1.3125rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  height: 4.25rem;
+  margin-top: 4.125rem;
+}
+
+.footer-text {
+  font-family: var(--font-footer);
+  position: fixed;
+  bottom: 1.5rem;
+  width: 100%;
+  font-weight: 500;
+  line-height: 17px;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--gray-light);
+}
+
+.footer-link {
+  font-weight: 700;
+  color: var(--gray-light);
+}
