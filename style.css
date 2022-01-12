@@ -7,6 +7,9 @@
   --font-main: "Space Mono", serif;
   --font-logo: "Inconsolata", serif;
   --font-footer: "Montserrat", serif;
+
+  --header-big: 4rem;
+  --text-big: 1.5rem;
 }
 
 *,
@@ -41,7 +44,8 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 540px;
   padding: 0 1.25rem;
   margin-top: 4rem;
   margin-bottom: 3.75rem;
@@ -80,21 +84,54 @@ button {
   letter-spacing: -0.035em;
   height: 4.25rem;
   margin-top: 4.125rem;
+  margin-bottom: 4.125rem;
 }
 
 .footer-text {
   font-family: var(--font-footer);
-  position: fixed;
-  bottom: 1.5rem;
   width: 100%;
   font-weight: 500;
   line-height: 17px;
   font-size: 0.875rem;
   text-align: center;
   color: var(--gray-light);
+  margin-bottom: 1.5rem;
 }
 
 .footer-link {
   font-weight: 700;
   color: var(--gray-light);
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: var(--header-big);
+    line-height: 94.78px;
+  }
+  p {
+    font-size: var(--text-big);
+    line-height: 35.54px;
+    width: 65%;
+  }
+  img {
+    margin: 0;
+  }
+  .d-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 12.5rem;
+  }
+  .col-left {
+    width: 40%;
+  }
+
+  .col-right {
+    width: 40%;
+  }
+
+  .footer-text {
+    position: fixed;
+    bottom: 0;
+  }
 }
