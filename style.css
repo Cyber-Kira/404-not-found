@@ -71,7 +71,11 @@ p {
   color: var(--gray);
 }
 
-button {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   background-color: var(--gray-dark);
   border: 0;
   font-size: 0.875rem;
@@ -85,6 +89,13 @@ button {
   height: 4.25rem;
   margin-top: 4.125rem;
   margin-bottom: 4.125rem;
+  transition: 0.25s;
+}
+
+.button:hover,
+.button:focus {
+  transform: translateY(-0.25em);
+  cursor: pointer;
 }
 
 .footer-text {
